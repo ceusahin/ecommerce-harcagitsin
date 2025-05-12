@@ -1,15 +1,8 @@
-import { User, Search, ShoppingCart, Menu, Phone } from "lucide-react";
+import { User, Search, ShoppingCart, Menu } from "lucide-react";
 
 function Header() {
   return (
     <>
-      {/* <div className="flex justify-between items-center bg-[#252B42] text-white px-8 py-4">
-        <div>
-          <Phone />
-        </div>
-        <div></div>
-        <div></div>
-      </div> */}
       <div className="flex justify-between items-center px-8 py-8">
         <h1 className="font-bold text-xl text-[#252B42]">HarcaGitsin</h1>
         <div className="flex gap-6">
