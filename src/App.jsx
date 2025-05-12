@@ -1,5 +1,5 @@
 import "./App.css";
-import Try from "./assets/components/try";
+import Try from "./components/try";
 
 function App() {
   return (
