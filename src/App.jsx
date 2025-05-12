@@ -1,6 +1,6 @@
 import "./App.css";
 import EditorPicks from "./layouts/EditorPicks";
-import Header from "./layouts/header";
+import Header from "./layouts/Header";
 import Hero from "./layouts/Hero";
 import BestSellerProducts from "./layouts/BestSellerProducts";
 
