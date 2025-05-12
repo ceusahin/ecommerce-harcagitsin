@@ -1,16 +1,21 @@
+import { Route, Routes } from "react-router";
 import "./App.css";
-import EditorPicks from "./layouts/EditorPicks";
 import Header from "./layouts/Header";
-import Hero from "./layouts/Hero";
-import BestSellerProducts from "./layouts/BestSellerProducts";
+import PageContent from "./layouts/PageContent";
+import MainPage from "./pages/MainPage";
+import Footer from "./layouts/Footer";
 
 function App() {
   return (
     <>
+      <h1 className="text-center">?!?!?!?! DESIGNED FOR PHONE</h1>
       <Header />
-      <Hero />
-      <EditorPicks />
-      <BestSellerProducts />
+      <PageContent>
+        <Routes>
+          <Route path="/" element={<MainPage />} />
+        </Routes>
+      </PageContent>
+      <Footer />
     </>
   );
 }

@@ -1,7 +1,9 @@
+import PageContent from "../layouts/PageContent";
+
 function BestSellerProductCard({ products }) {
-  console.log(products);
+  // console.log(products);
   return (
-    <>
+    <PageContent>
       {products.map((product, index) => (
         <div
           key={index}
@@ -14,11 +16,10 @@ function BestSellerProductCard({ products }) {
           <h2 className="text-[#737373] text-[17px] mt-2">
             {product.category}
           </h2>
-
           <p className="mt-3 font-bold text-green-700">${product.price}</p>
         </div>
       ))}
-    </>
+    </PageContent>
   );
 }
 

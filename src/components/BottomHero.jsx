@@ -1,8 +1,9 @@
-import heroPic1 from "../images/hero1.jpg";
+import bgGreen from "../images/bg-green.png";
+import PageContent from "../layouts/PageContent";
 import Slider from "./Slider";
 
-function Hero() {
-  let slides = [heroPic1, heroPic1, heroPic1, heroPic1];
+function BottomHero() {
+  let slides = [bgGreen, bgGreen, bgGreen, bgGreen];
   const slideContent = [
     {
       subtitle: "SUMMER 2020",
@@ -31,13 +32,7 @@ function Hero() {
     },
   ];
 
-  return (
-    <>
-      <div>
-        <Slider slides={slides} slideContent={slideContent} />
-      </div>
-    </>
-  );
+  return <Slider slides={slides} slideContent={slideContent} greenBg={true} />;
 }
 
-export default Hero;
+export default BottomHero;

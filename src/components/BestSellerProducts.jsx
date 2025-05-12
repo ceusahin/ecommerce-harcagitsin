@@ -6,6 +6,7 @@ import best5 from "../images/best-5.jpg";
 import best6 from "../images/best-6.jpg";
 import best8 from "../images/best-8.jpg";
 import BestSellerProductCard from "../components/BestSellerProductCard";
+import PageContent from "../layouts/PageContent";
 
 function BestSellerProducts() {
   const products = [
@@ -60,7 +61,7 @@ function BestSellerProducts() {
   ];
 
   return (
-    <>
+    <PageContent>
       <div className="flex flex-col items-center justify-center text-center mx-20 my-20">
         <h2 className="text-[#737373] text-2xl">Featured Products</h2>
         <h1 className="text-[#252B42] text-2xl font-bold mt-4">
@@ -73,7 +74,7 @@ function BestSellerProducts() {
       <div>
         <BestSellerProductCard products={products} />
       </div>
-    </>
+    </PageContent>
   );
 }
 

@@ -2,10 +2,11 @@ import Men from "../images/editor-picks-men.jpg";
 import Women from "../images/editor-picks-women.jpg";
 import Accessories from "../images/editor-picks-accessories.jpg";
 import Kids from "../images/editor-picks-kids.jpg";
+import PageContent from "../layouts/PageContent";
 
 function EditorPicks() {
   return (
-    <div>
+    <PageContent>
       <div className="flex flex-col items-center justify-center my-20 text-center mx-24">
         <h2 className="text-[#252B42] font-bold text-2xl mb-4">
           EDITOR'S PICK
@@ -40,7 +41,7 @@ function EditorPicks() {
           </button>
         </div>
       </div>
-    </div>
+    </PageContent>
   );
 }
 
