@@ -15,28 +15,29 @@ function EditorPicks() {
           Problems trying to resolve the conflict between
         </p>
       </div>
-      <div className="flex flex-col items-center justify-center gap-8 mx-10 mb-20">
-        <div className="relative">
+
+      <div className="flex flex-col items-center justify-center gap-8 mx-10 mb-20 lg:flex-row lg:items-stretch">
+        <div className="relative lg:hover:scale-105 lg:duration-200 cursor-pointer">
           <img src={Men} className="" />
-          <button className="absolute font-bold bottom-4 left-6 bg-white px-14 py-3">
+          <button className="absolute font-bold bottom-4 left-6 bg-white px-14 py-3 cursor-pointer">
             MEN
           </button>
         </div>
-        <div className="relative">
+        <div className="relative lg:hover:scale-105 lg:duration-200 cursor-pointer">
           <img src={Women} className="" />
-          <button className="absolute font-bold bottom-4 left-6 bg-white px-14 py-3">
+          <button className="absolute font-bold bottom-4 left-6 bg-white px-14 py-3 cursor-pointer">
             WOMEN
           </button>
         </div>
-        <div className="relative">
+        <div className="relative lg:hover:scale-105 lg:duration-200 cursor-pointer">
           <img src={Accessories} className="" />
-          <button className="absolute font-bold bottom-4 left-6 bg-white px-14 py-3">
+          <button className="absolute font-bold bottom-4 left-6 bg-white px-14 py-3 cursor-pointer">
             ACCESSORIES
           </button>
         </div>
-        <div className="relative">
+        <div className="relative lg:hover:scale-105 lg:duration-200 cursor-pointer">
           <img src={Kids} className="" />
-          <button className="absolute font-bold bottom-4 left-6 bg-white px-14 py-3">
+          <button className="absolute font-bold bottom-4 left-6 bg-white px-14 py-3 cursor-pointer">
             KIDS
           </button>
         </div>

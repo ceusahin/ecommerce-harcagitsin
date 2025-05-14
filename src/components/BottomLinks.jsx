@@ -1,6 +1,6 @@
 function BottomLinks() {
   return (
-    <div className="flex flex-col mx-10">
+    <div className="flex flex-col mx-10 lg:flex-row lg:justify-around lg:mb-14">
       <ul>
         <h2 className="font-bold mb-4 text-[#252B42]">Company Info</h2>
         <li className="mb-2 text-[#737373]">
@@ -17,7 +17,7 @@ function BottomLinks() {
         </li>
       </ul>
       <ul>
-        <h2 className="font-bold mb-4 text-[#252B42] mt-8">Legal</h2>
+        <h2 className="font-bold mb-4 text-[#252B42] mt-8 lg:mt-0">Legal</h2>
         <li className="mb-2 text-[#737373]">
           <a href="">About Us</a>
         </li>
@@ -32,7 +32,7 @@ function BottomLinks() {
         </li>
       </ul>
       <ul>
-        <h2 className="font-bold mb-4 text-[#252B42] mt-8">Features</h2>
+        <h2 className="font-bold mb-4 text-[#252B42] mt-8 lg:mt-0">Features</h2>
         <li className="mb-2 text-[#737373]">
           <a href="">Business Marketing</a>
         </li>
@@ -47,7 +47,9 @@ function BottomLinks() {
         </li>
       </ul>
       <ul>
-        <h2 className="font-bold mb-4 text-[#252B42] mt-8">Resources</h2>
+        <h2 className="font-bold mb-4 text-[#252B42] mt-8 lg:mt-0">
+          Resources
+        </h2>
         <li className="mb-2 text-[#737373]">
           <a href="">IOS & Android</a>
         </li>
@@ -61,7 +63,7 @@ function BottomLinks() {
           <a href="">API</a>
         </li>
       </ul>
-      <div className="mt-8 mb-14">
+      <div className="mt-8 mb-14 lg:mt-0">
         <h2 className="font-bold mb-4 text-[#252B42]">Get In Touch</h2>
         <div className="flex rounded overflow-hidden border border-gray-300 mb-2">
           <input
