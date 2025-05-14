@@ -2,7 +2,7 @@ import { Facebook, Instagram, Twitter } from "lucide-react";
 
 function SocialMedia() {
   return (
-    <div className="mt-10 mb-20 py-10 font-bold text-2xl bg-[#FAFAFA] flex flex-col items-center lg:flex-row lg:justify-around">
+    <div className="mb-20 py-10 font-bold text-2xl bg-[#FAFAFA] flex flex-col items-center lg:flex-row lg:justify-around">
       <div className="px-10 pb-6 text-[#252B42] lg:px-0 lg:py-0">
         <a href="/">HarcaGitsin</a>
       </div>

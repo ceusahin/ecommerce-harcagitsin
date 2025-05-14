@@ -44,7 +44,7 @@ function FeaturedProducts() {
   ];
 
   return (
-    <div className="flex flex-col justify-center items-center text-center">
+    <div className="mb-10 flex flex-col justify-center items-center text-center">
       <div className="flex flex-col justify-center items-center text-center pt-20 pb-10 mx-22">
         <h2 className="text-base text-[#23A6F0] font-semibold">
           Practice Advice
