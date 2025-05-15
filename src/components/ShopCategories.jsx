@@ -81,7 +81,7 @@ function ShopCategories() {
 
   return (
     <div className="flex flex-col items-center justify-center gap-10 bg-[#FAFAFA]">
-      <div className="flex flex-col justify-center items-center gap-4 lg:flex-row lg:w-full lg:justify-between lg:px-20">
+      <div className="flex flex-col justify-center items-center gap-4 lg:flex-row lg:w-full lg:justify-between lg:px-20 lg:mt-10">
         <div className="text-[24px] lg:text-[30px] font-bold text-[#252B42]">
           <h1>Shop</h1>
         </div>
