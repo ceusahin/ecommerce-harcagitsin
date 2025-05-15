@@ -10,7 +10,7 @@ import {
 
 function ShopPageAdvert() {
   return (
-    <div className="flex flex-col items-center gap-6 text-gray-500 text-8xl py-20 bg-[#FAFAFA]">
+    <div className="flex flex-col lg:flex-row lg:justify-center lg:gap-40 items-center gap-6 text-gray-500 text-8xl py-20 bg-[#FAFAFA]">
       <FontAwesomeIcon icon={faHooli} />
       <FontAwesomeIcon icon={faLyft} />
       <FontAwesomeIcon icon={faPiedPiperHat} />

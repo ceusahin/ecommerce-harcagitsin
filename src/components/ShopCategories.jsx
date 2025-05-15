@@ -7,11 +7,7 @@ import Phone from "../images/category-phone.jpg";
 import Clothes from "../images/hero1.jpg";
 import { useEffect, useState } from "react";
 import ProductList from "./ProductList";
-import best1 from "../images/best-1.jpg";
-import best2 from "../images/best-2.jpg";
-import best3 from "../images/best-3.jpg";
-import best4 from "../images/best-4.jpg";
-import best5 from "../images/best-5.jpg";
+import { products } from "../data/products.js";
 import Hero from "./Hero.jsx";
 
 function ShopCategories() {
@@ -43,213 +39,6 @@ function ShopCategories() {
     },
   ];
 
-  const allProducts = [
-    {
-      name: "Purple Shirt",
-      category: "CLOTHES",
-      price: "$7.89",
-      image: best1,
-    },
-    {
-      name: "White Label T-Shirt",
-      category: "CLOTHES",
-      price: "$4.89",
-      image: best2,
-    },
-    {
-      name: "White Pants",
-      category: "CLOTHES",
-      price: "$9.99",
-      image: best3,
-    },
-    {
-      name: "Brown Leather Jacket",
-      category: "CLOTHES",
-      price: "$19.99",
-      image: best4,
-    },
-    {
-      name: "Brown Cotton Pants",
-      category: "CLOTHES",
-      price: "$9.99",
-      image: best5,
-    },
-    {
-      name: "Brown Cotton Pants",
-      category: "CLOTHES",
-      price: "$9.99",
-      image: best5,
-    },
-    {
-      name: "Brown Cotton Pants",
-      category: "CLOTHES",
-      price: "$9.99",
-      image: best5,
-    },
-    {
-      name: "Purple Shirt",
-      category: "CLOTHES",
-      price: "$7.89",
-      image: best1,
-    },
-    {
-      name: "Brown Cotton Pants",
-      category: "CLOTHES",
-      price: "$9.99",
-      image: best5,
-    },
-    {
-      name: "Brown Cotton Pants",
-      category: "CLOTHES",
-      price: "$9.99",
-      image: best5,
-    },
-    {
-      name: "Purple Shirt",
-      category: "CLOTHES",
-      price: "$7.89",
-      image: best1,
-    },
-    {
-      name: "Brown Cotton Pants",
-      category: "CLOTHES",
-      price: "$9.99",
-      image: best5,
-    },
-    {
-      name: "Brown Cotton Pants",
-      category: "CLOTHES",
-      price: "$9.99",
-      image: best5,
-    },
-    {
-      name: "White Label T-Shirt",
-      category: "CLOTHES",
-      price: "$4.89",
-      image: best2,
-    },
-    {
-      name: "Purple Shirt",
-      category: "CLOTHES",
-      price: "$7.89",
-      image: best1,
-    },
-    {
-      name: "Brown Cotton Pants",
-      category: "CLOTHES",
-      price: "$9.99",
-      image: best5,
-    },
-    {
-      name: "White Label T-Shirt",
-      category: "CLOTHES",
-      price: "$4.89",
-      image: best2,
-    },
-    {
-      name: "Brown Cotton Pants",
-      category: "CLOTHES",
-      price: "$9.99",
-      image: best5,
-    },
-    {
-      name: "Purple Shirt",
-      category: "CLOTHES",
-      price: "$7.89",
-      image: best1,
-    },
-    {
-      name: "Brown Cotton Pants",
-      category: "CLOTHES",
-      price: "$9.99",
-      image: best5,
-    },
-    {
-      name: "White Label T-Shirt",
-      category: "CLOTHES",
-      price: "$4.89",
-      image: best2,
-    },
-    {
-      name: "Brown Cotton Pants",
-      category: "CLOTHES",
-      price: "$9.99",
-      image: best5,
-    },
-    {
-      name: "Purple Shirt",
-      category: "CLOTHES",
-      price: "$7.89",
-      image: best1,
-    },
-    {
-      name: "Brown Cotton Pants",
-      category: "CLOTHES",
-      price: "$9.99",
-      image: best5,
-    },
-    {
-      name: "White Label T-Shirt",
-      category: "CLOTHES",
-      price: "$4.89",
-      image: best2,
-    },
-    {
-      name: "Brown Cotton Pants",
-      category: "CLOTHES",
-      price: "$9.99",
-      image: best5,
-    },
-    {
-      name: "Purple Shirt",
-      category: "CLOTHES",
-      price: "$7.89",
-      image: best1,
-    },
-    {
-      name: "White Label T-Shirt",
-      category: "CLOTHES",
-      price: "$4.89",
-      image: best2,
-    },
-    {
-      name: "Brown Cotton Pants",
-      category: "CLOTHES",
-      price: "$9.99",
-      image: best5,
-    },
-    {
-      name: "Purple Shirt",
-      category: "CLOTHES",
-      price: "$7.89",
-      image: best1,
-    },
-    {
-      name: "Brown Cotton Pants",
-      category: "CLOTHES",
-      price: "$9.99",
-      image: best5,
-    },
-    {
-      name: "White Label T-Shirt",
-      category: "CLOTHES",
-      price: "$4.89",
-      image: best2,
-    },
-    {
-      name: "Brown Cotton Pants",
-      category: "CLOTHES",
-      price: "$9.99",
-      image: best5,
-    },
-    {
-      name: "White Label T-Shirt",
-      category: "CLOTHES",
-      price: "$4.89",
-      image: best2,
-    },
-  ];
-
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [sortType, setSortType] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
@@ -268,7 +57,7 @@ function ShopCategories() {
   };
 
   const filteredProducts = selectedCategory
-    ? allProducts
+    ? products
         .filter((p) => p.category === selectedCategory.title)
         .slice(0, selectedCategory.count)
     : [];
@@ -293,7 +82,6 @@ function ShopCategories() {
 
   return (
     <div className="flex flex-col items-center justify-center gap-10 bg-[#FAFAFA]">
-      <Hero />
       <div className="flex flex-col justify-center items-center gap-4 lg:flex-row lg:w-full lg:justify-between lg:px-20">
         <div className="text-[24px] lg:text-[30px] font-bold text-[#252B42]">
           <h1>Shop</h1>
@@ -303,7 +91,7 @@ function ShopCategories() {
             Home
           </a>
           <ChevronRight />
-          <h1 className="font-semibold text-[#737373]">Shop</h1>
+          <h1 className="font-bold text-[#737373]">Shop</h1>
         </div>
       </div>
       <div>

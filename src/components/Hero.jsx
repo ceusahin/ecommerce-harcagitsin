@@ -32,11 +32,7 @@ function Hero() {
     },
   ];
 
-  return (
-    <PageContent>
-      <Slider slides={slides} slideContent={slideContent} greenBg={false} />
-    </PageContent>
-  );
+  return <Slider slides={slides} slideContent={slideContent} greenBg={false} />;
 }
 
 export default Hero;
