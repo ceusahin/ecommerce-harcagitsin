@@ -1,4 +1,4 @@
-import { ChevronRight, List, LayoutGrid, HeartOff } from "lucide-react";
+import { ChevronRight, List, LayoutGrid } from "lucide-react";
 import ShopCategoriesCard from "./ShopCategoriesCard";
 import Laptop from "../images/category-laptop.jpg";
 import Camping from "../images/category-camping.png";
@@ -8,7 +8,6 @@ import Clothes from "../images/hero1.jpg";
 import { useEffect, useState } from "react";
 import ProductList from "./ProductList";
 import { products } from "../data/products.js";
-import Hero from "./Hero.jsx";
 
 function ShopCategories() {
   const categories = [
