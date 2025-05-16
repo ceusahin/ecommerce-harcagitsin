@@ -83,10 +83,10 @@ function Header() {
               Shop
             </a>
             <a
-              href="#"
+              href="/team"
               className="font-bold text-xl text-[#737373] hover:text-black"
             >
-              About
+              Team
             </a>
             <a
               href="/contact"
@@ -166,10 +166,10 @@ function Header() {
               Shop
             </a>
             <a
-              href="#"
+              href="/team"
               className="font-bold text-xl text-[#737373] hover:text-black"
             >
-              About
+              Team
             </a>
             <a
               href="/contact"
