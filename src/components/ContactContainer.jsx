@@ -42,7 +42,7 @@ function ContactContainer() {
             <Instagram />
           </div>
         </div>
-        <div className="border border-[#FFE9EA] bg-[#FFE9EA] p-40 rounded-full my-15 lg:p-100">
+        <div className="border border-[#FFE9EA] bg-[#FFE9EA] p-40 mx-10 rounded-full my-15 lg:p-100">
           <img
             src={contactFam}
             className="absolute left-0 top-162 object-cover h-[25rem] lg:h-[60rem] lg:w-[60rem] lg:left-250 lg:top-40"
@@ -56,7 +56,7 @@ function ContactContainer() {
         <h1 className="font-bold text-[#252B42] text-[40px] lg:mx-160">
           We help small businesses with big ideas!
         </h1>
-        <div className="lg:flex lg:flex-row lg:pt-10">
+        <div className="lg:flex lg:flex-row lg:pt-10 flex flex-col justify-center items-center gap-6">
           <section className="bg-white mx-10 mt-10 lg:mt-0 lg:p-10 w-full h-[20rem] flex flex-col justify-center items-center gap-4">
             <Phone className="text-[#23A6F0] h-[5rem] w-[5rem]" />
             <p className="text-[#252B42] font-bold">harcagitsin@mail.com</p>
