@@ -89,7 +89,7 @@ function Header() {
               About
             </a>
             <a
-              href="#"
+              href="/contact"
               className="font-bold text-xl text-[#737373] hover:text-black"
             >
               Contact
@@ -163,7 +163,19 @@ function Header() {
               href="/shop"
               className="font-bold text-xl text-[#737373] hover:text-black"
             >
-              Products
+              Shop
+            </a>
+            <a
+              href="#"
+              className="font-bold text-xl text-[#737373] hover:text-black"
+            >
+              About
+            </a>
+            <a
+              href="/contact"
+              className="font-bold text-xl text-[#737373] hover:text-black"
+            >
+              Contact
             </a>
             <a
               href="#"
@@ -175,7 +187,7 @@ function Header() {
               href="#"
               className="font-bold text-xl text-[#737373] hover:text-black"
             >
-              Contact
+              Pages
             </a>
           </div>
         )}

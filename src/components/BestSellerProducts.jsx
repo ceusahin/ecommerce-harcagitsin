@@ -14,7 +14,7 @@ function BestSellerProducts() {
         </p>
       </div>
       <div>
-        <BestSellerProductCard products={products.slice(1, 9)} />
+        <BestSellerProductCard products={products.slice(0, 8)} />
       </div>
     </>
   );
