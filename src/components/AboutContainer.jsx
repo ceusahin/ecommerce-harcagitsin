@@ -32,7 +32,7 @@ function AboutContainer() {
           <h2 className="text-[#E74040] text-[14px] font-semibold">
             Problems Trying
           </h2>
-          <h1 className="text-[#252B42] text-[24px] font-bold text-[24px]">
+          <h1 className="text-[#252B42] text-[24px] font-bold">
             Met minim Mollie non desert Alamo est sit cliquey dolor do met sent.
           </h1>
         </div>
