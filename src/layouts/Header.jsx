@@ -218,9 +218,12 @@ function Header() {
             <h1 className="text-[#737373] text-xl font-bold hover:text-black cursor-pointer">
               Log in
             </h1>
-            <h1 className="text-[#737373] text-xl font-bold hover:text-black cursor-pointer">
-              Register
-            </h1>
+            <a
+              href="/signup"
+              className="text-[#737373] text-xl font-bold hover:text-black cursor-pointer"
+            >
+              Sign up
+            </a>
           </div>
         )}
       </div>
